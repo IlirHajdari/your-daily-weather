@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Jumbotron Title -->
+    <div class="jumbotron container-fluid mt-2 text-center p-2" id="jumboTitle">
+      <h1><strong>Weather Dashboard</strong></h1>
+    </div>
+
+    <section class="weatherContainer">
+      <div class="searchContainer">
+        <!--City Search -->
+        <div class="row">
+          <div class="col-sm-12 bg-light">
+            <!-- Input Handler -->
+            <h4 class="pt-1"><strong>City Search:</strong></h4>
+            <!-- Input text box -->
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="search-city" />
+              <div class="input-group-append">
+                <button class="btn bg-primary text-light" id="search-button">
+                  <i class="fa fa-search">Search</i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Clear Search History -->
+            <button class="btn btn-primary" type="button" id="clear-button">
+              Clear History
+            </button>
+            <ul class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="currentDayWeather">
+        <div class="col-sm-8">
+          <div class="col-sm-12" id="current-weather">
+            <h3 class="city-name mb-1 mt-2 bolder" id="current-city">...</h3>
+            <p>Temperature:<span class="current" id="temperature"></span></p>
+            <p>Humidity:<span class="current" id="humidity"></span></p>
+            <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+            <p>UV Index:<span class="current" id="uv-index"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 day weather forecast card section -->
+    <main>
+      <h2 class="forecast"><strong>5-Day Forecast:</strong></h2>
+      <section class="dayForecast" id="future-weather">
+        <!-- This is the first card -->
+        <div class="card" id="card-1">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id="date1"></p>
+            <p id="img1"></p>
+            <p>Temp:<span id="temp1"></span></p>
+            <p>Humidity:<span id="humidity1"></span></p>
+            <p>Wind Speed:<span class="current" id="wind-speed1"></span></p>
+          </div>
+        </div>
+
+        <!-- This is the second card -->
+
+        <div class="card" id="card-2">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id="date2"></p>
+            <p id="img2"></p>
+            <p>Temp:<span id="temp2"></span></p>
+            <p>Humidity:<span id="humidity2"></span></p>
+            <p>Wind Speed:<span class="current" id="wind-speed2"></span></p>
+          </div>
+        </div>
+
+        <!-- This is the third card -->
+        <div class="card" id="card-3">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id="date3"></p>
+            <p id="img3"></p>
+            <p>Temp:<span id="temp3"></span></p>
+            <p>Humidity:<span id="humidity3"></span></p>
+            <p>Wind Speed:<span class="current" id="wind-speed3"></span></p>
+          </div>
+        </div>
+
+        <!-- This is the fourth card -->
+        <div class="card" id="card-4">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id="date4"></p>
+            <p id="img4"></p>
+            <p>Temp:<span id="temp4"></span></p>
+            <p>Humidity:<span id="humidity4"></span></p>
+            <p>Wind Speed:<span class="current" id="wind-speed4"></span></p>
+          </div>
+        </div>
+
+        <!-- This is the fifth card -->
+        <div class="card" id="card-5">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id="date5"></p>
+            <p id="img5"></p>
+            <p>Temp:<span id="temp5"></span></p>
+            <p>Humidity:<span id="humidity5"></span></p>
+            <p>Wind Speed:<span class="current" id="wind-speed5"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
