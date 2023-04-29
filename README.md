@@ -29,6 +29,6 @@
 4. The searched city will be added to the search history for easy future reference.
 5. Click on a city in the search history to view its current and future weather conditions again.
 
-![Image](./assets/images/WeatherDashSS.png)
+![Image](./assets/images/WeatherDash2.png)
 
 [Website](https://ilirhajdari.github.io/your-daily-weather/)
