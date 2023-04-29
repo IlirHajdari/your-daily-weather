@@ -28,3 +28,7 @@
 3. The program will display the current weather conditions and a 5-day forecast for the entered city.
 4. The searched city will be added to the search history for easy future reference.
 5. Click on a city in the search history to view its current and future weather conditions again.
+
+![Image](./assets/images/WeatherDashSS.png)
+
+[Website](https://ilirhajdari.github.io/your-daily-weather/)
